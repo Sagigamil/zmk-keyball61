@@ -26,6 +26,7 @@
 / {
     chosen {
 		zephyr,console = &cdc_acm_uart;
+        zmk,studio-rpc-uart = &uart1;
 	};
     keymap {
         compatible = "zmk,keymap";
