@@ -1,3 +1,5 @@
+# osource "Kconfig"
+
 config SHIELD_KEYBALL61_LEFT
     def_bool $(shields_list_contains,keyball61_left)
 
