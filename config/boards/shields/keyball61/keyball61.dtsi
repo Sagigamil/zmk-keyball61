@@ -4,7 +4,7 @@
 / {
     chosen {
         zephyr,display = &oled;
-	zmk,physical-layout = &keyball_physical_layout;
+	    zmk,physical-layout = &keyball_physical_layout;
     };
     
 	keyball_physical_layout: keyball_physical_layout {
@@ -94,9 +94,9 @@
     };
 	
     kscan0: kscan {
-        compatible = "zmk,kscan-gpio-matrix";
+        compatible = "zmk,my-kscan";
         label = "KSCAN";
-
         diode-direction = "col2row";
+        status="okay";
     };
 };
